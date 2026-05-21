@@ -1,118 +1,33 @@
-// Ways to create function Component
-
-// Normal function
-
-function App() {
-
-}
-
-// Arrow function
+import React from 'react'
+import UserDetails from './UserDetails'
+import Card from './Card'
 
 const App = () => {
 
-};
+    function clicked() {
+        console.log("I am a function")
+        alert("clicked")
+    }
 
-// Function Expression
+    return (
+        <div>
+            {/* we can pass the properties(props) in the component like this: */}
+            <UserDetails name='Naman' LastName='Sharma' number={12345} info={{ accountNumber: 1234, IFSC: 4567 }} clicked={clicked} />
+            {/* <UserDetails name='Rahul' /> */}
 
-const App = function () {
-
-};
-
-//---------------------------------------------------------
-
-// You can import multiple components from one file using named export method. Like this:
-
-/*
-    export function Button() {
-    return <h2>BUtton Component</h2>
-}
-    */
-/*
-    export function LoginButton() {
-    return <h2>Login Component</h2>
- }
-*/
-
-//---------------------------------------------------------
-
-// You can import only one component per file using export default method. Like this:
-
-/*
-const App = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+            {/* we can pass the children as a properties(props) in the component like this: */}
+            <Card>
+                <h1>Amazon Card</h1>
+                <button>Buy now</button>
+            </Card>
+            <Card>
+                <h1>Netflix Card</h1>
+                <button>Play now</button>
+                <button> Watch later</button>
+            </Card>
+        </div>
+    )
 }
 
 export default App
-*/
 
-//---------------------------------------------------------
-
-// fragements are empty parent tag which is used to wrap multiple HTML elements, Like this:
-
-/*
- const App = () => {
-  return (     
-    <>
-      <h1>Hello</h1>
-      <h2>Hello2</h2>
-    </>
-  )
-}
-export default App
-  */
-
-//---------------------------------------------------------
-
-// Types of conditional Rendering:
-
-const App = () => {
-    const isLoggedIn = false;
-
-    // using if-else
-
-    /*
-      if(isLoggedIn){
-          return <h1>Welcome User</h1>
-      }else{
-          return <h1>Login Please</h1>
-      }
-          */
-
-    // using null
-
-    /*
-   if(!isLoggedIn){
-       return null
-   }
-       */
-
-    // using LogicalAnd operator
-
-    /*
-    return (
-        <>
-         {
-            isLoggedIn&&<h1>Welcome User</h1>
-        } 
-        </>
-    )
-    */
-
-    // using Ternary operator
-
-    /*
-    return (
-        <>
-         {
-            isLoggedIn?<h1>Welcome User</h1>:<h2>Login Please</h2>
-        } 
-        </>
-    )
-    */
-};
-
-export default App;
