@@ -21,3 +21,9 @@
 ### 2 - Real DOM vs Virtual DOM?
 
 ### 3 - Props and children?
+
+## Topics covered on 22nd May 2026
+
+### 1 - What is useState?
+
+### 2 - what is batching and state?

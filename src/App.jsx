@@ -1,6 +1,7 @@
 import React from 'react'
 import UserDetails from './UserDetails'
 import Card from './Card'
+import State from './State'
 
 const App = () => {
 
@@ -12,11 +13,11 @@ const App = () => {
     return (
         <div>
             {/* we can pass the properties(props) in the component like this: */}
-            <UserDetails name='Naman' LastName='Sharma' number={12345} info={{ accountNumber: 1234, IFSC: 4567 }} clicked={clicked} />
+            {/* <UserDetails name='Naman' LastName='Sharma' number={12345} info={{ accountNumber: 1234, IFSC: 4567 }} clicked={clicked} /> */}
             {/* <UserDetails name='Rahul' /> */}
 
             {/* we can pass the children as a properties(props) in the component like this: */}
-            <Card>
+            {/* <Card>
                 <h1>Amazon Card</h1>
                 <button>Buy now</button>
             </Card>
@@ -24,7 +25,10 @@ const App = () => {
                 <h1>Netflix Card</h1>
                 <button>Play now</button>
                 <button> Watch later</button>
-            </Card>
+            </Card> */}
+
+            <State />
+
         </div>
     )
 }
