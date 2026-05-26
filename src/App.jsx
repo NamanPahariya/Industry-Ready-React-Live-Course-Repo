@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import UserDetails from './UserDetails'
 import Card from './Card'
 import State from './State'
+import TestUseEffect from './TestUseEffect'
 
 const App = () => {
 
-    function clicked() {
-        console.log("I am a function")
-        alert("clicked")
+    const [show, setShow] = useState(true);
+
+
+
+    // function clicked() {
+    //     console.log("I am a function")
+    //     alert("clicked")
+    // }
+    const handleVisibility = () => {
+        setShow(!show)
     }
 
     return (
@@ -27,7 +35,11 @@ const App = () => {
                 <button> Watch later</button>
             </Card> */}
 
-            <State />
+            {/* <State /> */}
+            {show && <TestUseEffect />}
+            <br /><br />
+
+            <button onClick={handleVisibility}>Show me!</button>
 
         </div>
     )

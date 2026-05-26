@@ -27,3 +27,7 @@
 ### 1 - What is useState?
 
 ### 2 - what is batching and state?
+
+## Topics covered on 26 May 2026
+
+### 1 - What is useEffect?
