@@ -31,3 +31,11 @@
 ## Topics covered on 26 May 2026
 
 ### 1 - What is useEffect?
+
+## Topics covered on 28 May 2026
+
+### 1 - What is useRef?
+
+## Topics covered on 29 May 2026
+
+### 1 - What is useMemo and customHook?
