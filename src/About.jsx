@@ -3,12 +3,10 @@ import useApiData from './useApiData'
 
 const About = () => {
 
-    const data = useApiData(`https://jsonplaceholder.typicode.com/todos/2`)
 
     return (
         <div>
-            <h1>About Component</h1>
-            <pre>{JSON.stringify(data, null, 2)}</pre>
+            <h1 className='dark:bg-black dark:text-yellow-400'>About Component</h1>
         </div>
     )
 }
