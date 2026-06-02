@@ -39,3 +39,7 @@
 ## Topics covered on 29 May 2026
 
 ### 1 - What is useMemo and customHook?
+
+## Topics covered on 2nd June 2026
+
+### 1 - Tailwind Css, responsive design, dark-light mode?
