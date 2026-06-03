@@ -43,3 +43,9 @@
 ## Topics covered on 2nd June 2026
 
 ### 1 - Tailwind Css, responsive design, dark-light mode?
+
+## Topics covered on 3nd June 2026
+
+### 1 - Controlled and Uncontrolled component.
+
+### 2 - Form Handeling
