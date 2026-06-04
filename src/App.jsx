@@ -5,6 +5,8 @@ import Home from './Home'
 import About from './About'
 import TestUncontrolled from './TestUncontrolled'
 import TestControlled from './TestControlled'
+import { RouterProvider } from 'react-router'
+import { router } from './router'
 
 const App = () => {
     return (
@@ -14,7 +16,8 @@ const App = () => {
             {/* <Home />
             <About /> */}
             {/* <TestUncontrolled /> */}
-            <TestControlled />
+            {/* <TestControlled /> */}
+            <RouterProvider router={router} />
         </div>
     )
 }
