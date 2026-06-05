@@ -53,3 +53,11 @@
 ## Topics covered on 4th June 2026
 
 ### 1 - React Router in detail
+
+## Topics covered on 5th June 2026
+
+### 1 - Props Drilling
+
+### 2 - Context API & context in react-router
+
+### 3 - React Memo
