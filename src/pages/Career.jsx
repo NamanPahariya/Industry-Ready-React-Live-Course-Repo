@@ -2,6 +2,7 @@ import React from 'react'
 import { useOutletContext } from 'react-router'
 
 const Career = () => {
+    throw new Error('Career Crashed')
     const userName = useOutletContext();
     return (
         <div>

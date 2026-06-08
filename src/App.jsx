@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import TestUseRef from './TestUseRef'
 import TestUseMemo from './TestUseMemo'
 import Home from './Home'
@@ -26,12 +26,16 @@ const App = () => {
             <About /> */}
             {/* <TestUncontrolled /> */}
             {/* <TestControlled /> */}
-            {/* <RouterProvider router={router} /> */}
-            <ThemeContext.Provider value={color}>
+            <Suspense fallback={<h1>Loading...</h1>}>
+                <RouterProvider router={router} />
+            </Suspense>
+
+
+            {/* <ThemeContext.Provider value={color}>
                 <UserContext.Provider value={{ user }}>
                     <Dashboard />
                 </UserContext.Provider>
-            </ThemeContext.Provider>
+            </ThemeContext.Provider> */}
         </div>
     )
 }

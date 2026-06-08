@@ -2,6 +2,7 @@ import React, { memo } from 'react'
 import UserMenu from './UserMenu'
 
 const Navbar = ({ userName }) => {
+    throw new Error('navbar crashed');
     console.log("this log gets print from navbar component")
     return (
         <div>

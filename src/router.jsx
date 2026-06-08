@@ -1,10 +1,12 @@
 import { createBrowserRouter, redirect } from "react-router";
 import Landing from "./pages/Landing";
-import Career from "./pages/Career";
+// import Career from "./pages/Career";
+const Career = lazy(() => import('./pages/Career'))
 import Java from "./pages/Java";
 import Blog from "./pages/Blog";
 import About from "./About";
 import MainLayout from "./pages/MainLayout";
+import { lazy } from "react";
 const protectedRoute = () => {
     // const navigate = useNavigate();
 
@@ -25,7 +27,8 @@ export const router = createBrowserRouter([{
         },
         {
             path: '/career',
-            element: <Career />
+            element: <Career />,
+            errorElement: <h1>Error Occured</h1>
         }, {
             path: '/career/java',
             element: <Java />
